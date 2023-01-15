@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>League of Legends</title>
+    <link
+      type="image/png"
+      sizes="16x16"
+      rel="icon"
+      href="./assets/images/icons8-league-of-legends-120.png"
+    />
+    <!-- css files -->
+    <link rel="stylesheet" href="./assets/style.css" />
+    <link rel="stylesheet" href="./assets/responsive.css" />
+    <!-- fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <!-- start header -->
+      <div class="header" id="header">
+        <!-- start header__left -->
+        <div class="header__left">
+          <div class="header__logo">
+            <img
+              src="./assets/images/riot-logo.png"
+              alt="riot-logo"
+              id="riot-logo"
+              onclick="showPopup()"
+            />
+            <i class="fa-solid fa-caret-down" id="down-icon"></i>
+            <i class="fa-solid fa-sort-up" id="up-icon"></i>
+          </div>
+          <div class="header__logo" id="hideHeader1">
+            <img
+              src="./assets/images/lol-icon.png"
+              alt="lol-icon"
+              id="lol-logo"
+            />
+          </div>
+        </div>
+        <!-- end header__left -->
+        <!-- start header__center -->
+        <div class="header__center" id="hideHeader2">
+          <ul class="nav">
+            <li>
+              <a href="#">game</a>
+            </li>
+            <li>
+              <a href="#">champions</a>
+            </li>
+            <li>
+              <a href="#"
+                >news
+                <i class="fa-solid fa-caret-down"></i>
+              </a>
+              <ul class="subnav">
+                <li>
+                  <a href="#">ALL</a>
+                </li>
+                <li>
+                  <a href="#">Game Updates</a>
+                </li>
+                <li>
+                  <a href="#">Esports</a>
+                </li>
+                <li>
+                  <a href="#">Dev</a>
+                </li>
+                <li>
+                  <a href="#">Lore</a>
+                </li>
+                <li>
+                  <a href="#">Media</a>
+                </li>
+                <li>
+                  <a href="#">Merch</a>
+                </li>
+                <li>
+                  <a href="#">Community</a>
+                </li>
+                <li>
+                  <a href="#">Riot Games</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">patch notes</a>
+            </li>
+            <li>
+              <a href="#"
+                >discover
+                <i class="fa-solid fa-caret-down"></i>
+              </a>
+              <ul class="subnav">
+                <li>
+                  <a href="#">League Displays</a>
+                </li>
+                <li>
+                  <a href="#">Riot Mobile</a>
+                </li>
+                <li>
+                  <a href="#">Avatar Creator</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#"
+                >esports
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#"
+                >universe
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#"
+                >more
+                <i class="fa-solid fa-caret-down"></i>
+              </a>
+              <ul class="subnav">
+                <li>
+                  <a href="#">Merch</a>
+                </li>
+                <li>
+                  <a href="#">Support</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <!-- end header__center -->
+        <!-- start header__right -->
+        <div class="header__right" id="hideHeader3">
+          <a href="#" id="language"><i class="fa-solid fa-earth-africa"></i></a>
+          <button id="signIn">sign in</button>
+          <button id="playNow">play now</button>
+          <i class="fa-solid fa-bars" style="display: none" id="menu-icon"></i>
+        </div>
+        <i
+          class="fa-solid fa-rectangle-xmark"
+          id="close-icon"
+          onclick="closePopup()"
+        ></i>
+        <!-- start header__right -->
+        <div id="popup" class="popupdown">
+          <div class="popupdown__content">
+            <div class="popup-item">
+              <h3>GAMES</h3>
+              <ul>
+                <li>LEAGUE OF LEGENDS</li>
+                <li>VALORANT</li>
+                <li>TEAMFIGHT STATICS</li>
+                <li>RUNETERRA</li>
+                <li>LOL:WILD RIFT</li>
+              </ul>
+            </div>
+            <div>
+              <div class="popup-item">
+                <h3>FORGE</h3>
+                <ul>
+                  <li>LEAGUE OF LEGENDS</li>
+                  <li>VALORANT</li>
+                  <li>TEAMFIGHT STATICS</li>
+                  <li>RUNETERRA</li>
+                  <li>LOL:WILD RIFT</li>
+                </ul>
+              </div>
+
+              <div class="popup-item">
+                <h3>ESPORTS</h3>
+                <ul>
+                  <li>LEAGUE OF LEGENDS</li>
+                  <li>VALORANT</li>
+                </ul>
+              </div>
+            </div>
+            <div>
+              <div class="popup-item">
+                <h3>ENTERTAINMENT</h3>
+                <ul>
+                  <li>LEAGUE OF LEGENDS</li>
+                  <li>VALORANT</li>
+                  <li>TEAMFIGHT STATICS</li>
+                </ul>
+              </div>
+              <div class="popup-item">
+                <h3>BUSINESS</h3>
+                <ul>
+                  <li>LEAGUE OF LEGENDS</li>
+                  <li>VALORANT</li>
+                  <li>TEAMFIGHT STATICS</li>
+                  <li>RUNETERRA</li>
+                  <li>LOL:WILD RIFT</li>
+                </ul>
+              </div>
+            </div>
+            <div class="popupdown__image">
+              <img src="./assets/images/popup1.jpeg" alt="" />
+              <p>Pentakill - Predator (Bản Remix Chiến Binh Tận Thế)</p>
+            </div>
+            <div class="popupdown__image">
+              <img src="./assets/images/popup2.jpeg" alt="" />
+              <p>MONSTERS ATTACK! PASS AND PASS+</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end header -->
+      <!-- start content -->
+      <div class="content">
+        <div class="hero">
+          <video width="100%" height="100%" autoplay muted loop plays-inline>
+            <source src="./assets/videos/hero-video.mp4" type="video/mp4" />
+          </video>
+          <div class="hero-video">
+            <div class="img">
+              <img src="./assets/images/hero-logo.png" alt="" />
+              <button>PLAY FOR FREE</button>
+            </div>
+            <video width="90%" height="100%" autoplay muted loop plays-inline>
+              <source src="./assets/videos/hero-video.mp4" type="video/mp4" />
+            </video>
+          </div>
+        </div>
+        <div class="newsfeed">
+          <div class="card-list">
+            <div class="card-item">
+              <div class="card-img">
+                <img src="./assets/images/banner1.jpg" alt="" />
+              </div>
+              <div class="card-content">
+                <span>GAME UPDATES</span>
+                <h3>Winterblessed 2022 Event Trailer</h3>
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing <br />
+                  elit. Incidunt obcaecati dicta assumenda nisi
+                </p>
+              </div>
+            </div>
+            <div class="card-item">
+              <div class="card-img">
+                <img src="./assets/images/banner2.jpg" alt="" />
+              </div>
+              <div class="card-content">
+                <span>GAME UPDATES</span>
+                <h3>Winterblessed 2022 Event Trailer</h3>
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing <br />
+                  elit. Incidunt obcaecati dicta assumenda nisi
+                </p>
+              </div>
+            </div>
+            <div class="card-item">
+              <div class="card-img">
+                <img src="./assets/images/banner3.jpg" alt="" />
+              </div>
+              <div class="card-content">
+                <span>GAME UPDATES</span>
+                <h3>Winterblessed 2022 Event Trailer</h3>
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing <br />
+                  elit. Incidunt obcaecati dicta assumenda nisi
+                </p>
+              </div>
+            </div>
+          </div>
+          <span id="view-all"
+            >VIEW ALL<i class="fa-solid fa-arrow-right-long"></i
+          ></span>
+          <span id="feature"
+            >FEATURED NEWS<i class="fa-solid fa-minus"></i
+          ></span>
+        </div>
+        <div class="champion">
+          <div class="champion__content">
+            <span
+              style="
+                font-size: 24px;
+                font-weight: 600;
+                letter-spacing: 2.4px;
+                text-align: center;
+              "
+              >CHOOSE YOUR</span
+            >
+            <span
+              style="
+                font-size: 100px;
+                font-weight: 800;
+                letter-spacing: 3px;
+                text-align: center;
+                font-style: italic;
+              "
+            >
+              CHAMPION</span
+            >
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis
+              voluptates molestias nam maxime alias nemo rerum ullam numquam?
+            </p>
+            <div class="champion-btn">
+              <button id="btn-yellow">DISCOVER MORE CHAMPIONS</button>
+              <button id="btn-blue">PLAY NOW</button>
+            </div>
+          </div>
+          <div class="champion__img">
+            <div class="champion__img-left">
+              <div class="hero-properties">
+                <div class="hero-properties__item">
+                  <img src="./assets/images/assansins.png" alt="" />
+                  <div class="properties-bar"></div>
+                </div>
+                <div class="hero-properties__item">
+                  <img src="./assets/images/fighter.png" alt="" />
+                  <div class="properties-bar"></div>
+                </div>
+                <div class="hero-properties__item">
+                  <img src="./assets/images/mages.png" alt="" />
+                  <div class="properties-bar"></div>
+                </div>
+                <div class="hero-properties__item">
+                  <img src="./assets/images/marksmen.png" alt="" />
+                  <div class="properties-bar"></div>
+                </div>
+                <div class="hero-properties__item">
+                  <img src="./assets/images/supports.png" alt="" />
+                  <div class="properties-bar"></div>
+                </div>
+                <div class="hero-properties__item">
+                  <img src="./assets/images/tanks.png" alt="" />
+                  <div class="properties-bar"></div>
+                </div>
+              </div>
+              <div class="hero-properties__video">
+                <video
+                  width="450px"
+                  height="250px"
+                  autoplay
+                  muted
+                  loop
+                  plays-inline
+                >
+                  <source
+                    src="./assets/videos/hero-video.mp4"
+                    type="video/mp4"
+                  />
+                </video>
+              </div>
+            </div>
+            <div class="champion__img-right">
+              <img src="./assets/images/per1.png" alt="" />
+              <div class="champion__img-right-content">
+                <h3 style="font-size: 16px">AKALI</h3>
+                <p style="font-size: 12px">The Rouge Assansins</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end content -->
+      <!-- start footer -->
+      <div class="footer"></div>
+      <!-- end footer -->
+    </div>
+    <!-- script -->
+    <script src="./main.js"></script>
+  </body>
+</html>
